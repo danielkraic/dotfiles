@@ -86,9 +86,9 @@ set smartcase       " ...unless we type a capital
 
 
 " Indent XML readably
-function! DoPrettyXML()
-	1,$!xmllint --format --recover -
-	set filetype=xml
-endfunction
-command! PrettyXML call DoPrettyXML()
+"function! DoPrettyXML()
+	"1,$!xmllint --format --recover -
+	"set filetype=xml
+"endfunction
+"command! PrettyXML call DoPrettyXML()
 
