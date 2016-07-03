@@ -4,6 +4,20 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" === plugins ===
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-fugitive'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mileszs/ack.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'scrooloose/nerdcommenter'
+
+call plug#end()
+
 " ================ General Config ====================
 
 set number                      "Line numbers are good
@@ -92,3 +106,12 @@ set smartcase       " ...unless we type a capital
 "endfunction
 "command! PrettyXML call DoPrettyXML()
 
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+" ack.vim with ag (silver_searcher)
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
