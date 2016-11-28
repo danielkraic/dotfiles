@@ -15,7 +15,7 @@ sudo pip install dotfiles
 
 **Clone**
 ```bash
-git clone https://github.com/danielkraic/dotfiles.git Dotfiles
+git clone git@github.com:danielkraic/dotfiles.git Dotfiles
 ```
 
 **Sync**
