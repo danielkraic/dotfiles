@@ -25,8 +25,7 @@ HISTSIZE=5000
 HISTFILESIZE=10000
 export HISTFILE=~/.histfile
 
-# User specific aliases and functions
-
+# powerline
 if [ -f `which powerline-daemon` ]; then
   powerline-daemon -q
   POWERLINE_BASH_CONTINUATION=1
@@ -34,13 +33,18 @@ if [ -f `which powerline-daemon` ]; then
   . /usr/share/powerline/bash/powerline.sh
 fi
 
-export NVM_DIR="/home/dkraic/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-[[ -s "/home/dkraic/.gvm/scripts/gvm" ]] && source "/home/dkraic/.gvm/scripts/gvm"
-
-#
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
+
+alias weather="curl wttr.in/bratislava"
+
+# fix Perl locale warnings
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+#export PS1="\u@\h \[\e[32m\]\W\[\e[m\]> "
