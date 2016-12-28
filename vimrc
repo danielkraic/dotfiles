@@ -15,6 +15,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'scrooloose/nerdcommenter'
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 
@@ -115,3 +116,7 @@ nmap ga <Plug>(EasyAlign)
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+syntax enable
+set background=dark
+colorscheme solarized
