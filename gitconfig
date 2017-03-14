@@ -1,0 +1,18 @@
+# This is Git's per-user configuration file.
+[user]
+	email = daniel.kraic@eset.sk
+	name = Daniel Kraic
+
+[alias]
+  l = log --oneline --graph --decorate
+  s = status -sb
+  d = diff --word-diff
+  dc = diff --word-diff --cached
+  ds = diff --word-diff --staged
+  c = commit
+  ce = checkout
+  b = branch
+  a = add
+
+[color]
+	ui = auto

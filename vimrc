@@ -118,5 +118,5 @@ if executable('ag')
 endif
 
 syntax enable
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized

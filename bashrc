@@ -44,7 +44,10 @@ fi
 alias weather="curl wttr.in/bratislava"
 
 # fix Perl locale warnings
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+#export LC_CTYPE=en_US.UTF-8
+#export LC_ALL=en_US.UTF-8
 
 #export PS1="\u@\h \[\e[32m\]\W\[\e[m\]> "
+
+export GOPATH=~/work/go
+PATH=$PATH:$GOPATH/bin
