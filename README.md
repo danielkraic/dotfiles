@@ -18,10 +18,12 @@ sudo pip install dotfiles
 
 ```
 [dotfiles]
+[dotfiles]
 repository = ~/Dotfiles
 ignore = [
     '.git',
     '.gitignore',
+    'README.md',
     '*.swp']
 ```
 
