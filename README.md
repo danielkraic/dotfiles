@@ -18,7 +18,6 @@ sudo pip install dotfiles
 
 ```
 [dotfiles]
-[dotfiles]
 repository = ~/Dotfiles
 ignore = [
     '.git',
