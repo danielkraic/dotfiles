@@ -1,7 +1,5 @@
 # Dotfiles
 
-my dotfiles from fedora 23
-
 ## About
 
 https://pypi.python.org/pypi/dotfiles
