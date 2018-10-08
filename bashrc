@@ -51,3 +51,8 @@ alias weather="curl wttr.in/bratislava"
 
 export GOPATH=~/work/go
 PATH=$PATH:$GOPATH/bin
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+[[ -s "/etc/grc.bashrc" ]] && source /etc/grc.bashrc
+
